@@ -64,4 +64,34 @@ body{
 
 .card-container{
     grid-row: 4 / span 1;
+
+    padding: 25px;
+}
+
+.book{
+    border: none;
+    border-radius: 5px;
+    height: 210px;
+    width: 140px;
+    background:linear-gradient(to right,var(--book-color),#444);
+    position: relative;
+    z-index: 1;
+    box-shadow: -4px -4px 5px #00000020
+    ,4px 4px 5px #00000080
+    ,inset 5px 0px 2px gray;
+}
+
+
+
+.book::after{
+    content:'';
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 135px;
+    height: 6px;
+    z-index: 2 ;
+    background: white;
+    border-radius: 5px 20px;
+    
 }
